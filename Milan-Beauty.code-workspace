@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Milan_Beauty/img"
+		},
+		{
+			"path": "../Milan_Beauty/js"
+		},
+		{
+			"path": "../Milan_Beauty/assets"
+		},
+		{
+			"path": "../Milan_Beauty/css"
+		}
+	],
+	"settings": {}
+}

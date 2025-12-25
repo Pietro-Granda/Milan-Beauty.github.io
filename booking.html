@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Prenota Ora | Milan Beauty</title>
+  <meta name="description" content="Prenota il tuo trattamento Milan Beauty. Compila il modulo: ti contatteremo entro 24 ore per confermare." />
+
+  <link rel="icon" href="assets/images/milan_beauty_logo_20251217_222018.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header header-static">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Torna alla home">
+        <span class="back-arrow" aria-hidden="true">←</span>
+        <img class="brand-logo" src="assets/images/milan_beauty_logo_20251217_222018.png" alt="Logo Milan Beauty" />
+        <div class="brand-text">
+          <div class="brand-title">Milan Beauty</div>
+          <div class="brand-subtitle">Eccellenza Brasiliana</div>
+        </div>
+      </a>
+
+      <div class="badge badge-soft">Prenota Ora</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="section booking-hero">
+      <div class="container center">
+        <h1>Prenota il Tuo Trattamento</h1>
+        <p class="lead muted maxw">
+          Compila il modulo per richiedere un appuntamento. Ti contatteremo entro 24 ore
+          per confermare data e orario del tuo trattamento di bellezza.
+        </p>
+
+        <div class="hero-meta hero-meta-center">
+          <div class="meta-pill">📞 +39 375 636 5970</div>
+          <div class="meta-pill">🕒 Mar–Ven 09:30–19:00 • Sab 09:00–16:00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+      <div class="container">
+        <!-- Success box (hidden by default) -->
+        <section class="success" id="successBox" hidden>
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h2 class="success-title">Prenotazione Inviata!</h2>
+          <p class="muted">
+            Grazie per aver scelto Milan Beauty. Ti contatteremo entro 24 ore per confermare l'appuntamento
+            e fornirti tutte le informazioni necessarie.
+          </p>
+
+          <div class="info-card info-card-soft">
+            <h3>Cosa succede ora?</h3>
+            <ul class="bullets">
+              <li>Ti contatteremo per confermare data e orario</li>
+              <li>Riceverai informazioni pre-trattamento</li>
+              <li>Potrai fare domande al nostro team</li>
+            </ul>
+          </div>
+
+          <div class="row row-center">
+            <a class="btn btn-ghost" href="index.html">← Torna alla Home</a>
+            <a class="btn" href="tel:+393756365970">Chiamaci ora</a>
+          </div>
+        </section>
+
+        <!-- Form -->
+        <form class="form" id="bookingForm" novalidate>
+          <div class="form-grid">
+            <!-- Informazioni personali -->
+            <section class="form-card">
+              <header class="form-card-head">
+                <h2>Informazioni Personali</h2>
+                <p class="muted">I tuoi dati per contattarti</p>
+              </header>
+
+              <div class="fields grid-2">
+                <label class="field">
+                  <span>Nome *</span>
+                  <input name="nome" type="text" autocomplete="given-name" required />
+                  <small class="error" data-error-for="nome"></small>
+                </label>
+
+                <label class="field">
+                  <span>Cognome</span>
+                  <input name="cognome" type="text" autocomplete="family-name" />
+                </label>
+
+                <label class="field">
+                  <span>Telefono *</span>
+                  <input name="telefono" type="tel" autocomplete="tel" required placeholder="+39 123 456 7890" />
+                  <small class="error" data-error-for="telefono"></small>
+                </label>
+
+                <label class="field">
+                  <span>Email</span>
+                  <input name="email" type="email" autocomplete="email" placeholder="tua@email.com" />
+                </label>
+              </div>
+            </section>
+
+            <!-- Servizio e appuntamento -->
+            <section class="form-card">
+              <header class="form-card-head">
+                <h2>Servizio e Appuntamento</h2>
+                <p class="muted">Seleziona servizio e preferenze</p>
+              </header>
+
+              <div class="fields">
+                <label class="field">
+                  <span>Servizio desiderato *</span>
+                  <select name="servizio" required>
+                    <option value="" selected disabled>Seleziona il servizio che ti interessa</option>
+                    <option>Trucco semipermanente - Sopracciglia</option>
+                    <option>Trucco semipermanente - Eyeliner</option>
+                    <option>Trucco semipermanente - Labbra</option>
+                    <option>Microblading</option>
+                    <option>Laminazione ciglia</option>
+                    <option>Tinta ciglia e sopracciglia</option>
+                    <option>Clean-up viso</option>
+                    <option>Face-lift (antiage)</option>
+                    <option>Microneedling</option>
+                    <option>Presso-slim</option>
+                    <option>Body-shape</option>
+                    <option>Massaggio rilassante</option>
+                    <option>Massaggio drenante</option>
+                    <option>Epilazione laser - Viso</option>
+                    <option>Epilazione laser - Gambe</option>
+                    <option>Epilazione laser - Inguine</option>
+                    <option>Epilazione laser - Ascelle</option>
+                    <option>Brazilian manicure SPA</option>
+                    <option>Semipermanente unghie</option>
+                    <option>Ricostruzione gel</option>
+                    <option>Brazilian pedicure SPA</option>
+                    <option>Consulenza personalizzata</option>
+                  </select>
+                  <small class="error" data-error-for="servizio"></small>
+                </label>
+
+                <div class="grid-2">
+                  <label class="field">
+                    <span>Data preferita</span>
+                    <input name="data_preferita" type="date" />
+                  </label>
+
+                  <label class="field">
+                    <span>Orario preferito</span>
+                    <select name="orario_preferito">
+                      <option value="" selected>Seleziona orario</option>
+                      <option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option>
+                      <option>12:00</option><option>12:30</option><option>14:00</option><option>14:30</option><option>15:00</option>
+                      <option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </section>
+
+            <!-- Note -->
+            <section class="form-card">
+              <header class="form-card-head">
+                <h2>Note Aggiuntive</h2>
+                <p class="muted">Opzionale</p>
+              </header>
+
+              <div class="fields">
+                <label class="field">
+                  <span>Note o richieste speciali</span>
+                  <textarea name="note" rows="4" placeholder="Es: prima volta, allergie, domande specifiche, preferenze particolari..."></textarea>
+                </label>
+              </div>
+            </section>
+
+            <!-- Info importanti -->
+            <section class="form-card form-card-soft">
+              <header class="form-card-head">
+                <h2>Informazioni Importanti</h2>
+              </header>
+
+              <ul class="bullets">
+                <li>Ti contatteremo entro 24 ore per confermare l'appuntamento</li>
+                <li>Per il trucco semipermanente è spesso consigliata una consulenza preliminare</li>
+                <li>Porta un documento di identità valido</li>
+                <li>Per disdire o modificare, avvisa almeno 24 ore prima</li>
+                <li>Il centro si trova in Via Alessandro Astesani 45, Milano (zona Affori)</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="form-footer">
+            <p class="muted" id="formMsg" aria-live="polite"></p>
+
+            <button class="btn btn-large" type="submit" id="submitBtn">
+              Invia Richiesta di Prenotazione
+            </button>
+
+            <p class="fineprint muted">
+              Cliccando “Invia” accetti che i tuoi dati vengano utilizzati per contattarti riguardo alla prenotazione.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Preferisci chiamare -->
+    <section class="section section-alt">
+      <div class="container center">
+        <h2>Preferisci Chiamare?</h2>
+        <p class="muted">Puoi anche contattarci direttamente per prenotare o per qualsiasi domanda.</p>
+
+        <div class="row row-center">
+          <a class="btn" href="tel:+393756365970">+39 375 636 5970</a>
+          <div class="muted small">
+            <div>Martedì - Venerdì: 09:30 - 19:00</div>
+            <div>Sabato: 09:00 - 16:00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/booking.js"></script>
+</body>
+</html>
