@@ -592,7 +592,7 @@ button{ cursor:pointer; }
 }
 .form-card-head p{ margin: 0; }
 
-.fields{ margin-top: 14px; display:grid; gap: 12px; }
+.fields{ color:#0b0b0c; font-size: 14px; display:grid; gap: 12px; }
 .grid-2{ display:grid; gap: 12px; grid-template-columns: 1fr; }
 @media (min-width: 760px){
   .grid-2{ grid-template-columns: 1fr 1fr; }
