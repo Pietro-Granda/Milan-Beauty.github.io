@@ -397,7 +397,7 @@ button{ cursor:pointer; }
   .service-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1100px){
-  .service-grid{ grid-template-columns: repeat(3, 1fr); }
+  .service-grid{ grid-template-columns: repeat(4, 1fr); }
 }
 .service-card{
   background: rgba(255,255,255,0.02);
